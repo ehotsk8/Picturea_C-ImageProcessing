@@ -1,0 +1,5 @@
+C:\Users\ehots\Desktop\Picturea\PLL\bin\Debug\PLL.dll
+C:\Users\ehots\Desktop\Picturea\PLL\bin\Debug\PLL.pdb
+C:\Users\ehots\Desktop\Picturea\PLL\obj\Debug\PLL.csprojResolveAssemblyReference.cache
+C:\Users\ehots\Desktop\Picturea\PLL\obj\Debug\PLL.dll
+C:\Users\ehots\Desktop\Picturea\PLL\obj\Debug\PLL.pdb

@@ -1,0 +1,216 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{A4EC7708-1613-44AB-B93D-CCA5AC168354}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Picturea</RootNamespace>
+    <AssemblyName>Picturea</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Windows.Forms.DataVisualization" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="BinarizationForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BinarizationForm.Designer.cs">
+      <DependentUpon>BinarizationForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BrightnessForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BrightnessForm.Designer.cs">
+      <DependentUpon>BrightnessForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ColorOverlayForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ColorOverlayForm.Designer.cs">
+      <DependentUpon>ColorOverlayForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ConvolutionForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ConvolutionForm.Designer.cs">
+      <DependentUpon>ConvolutionForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CurveForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CurveForm.Designer.cs">
+      <DependentUpon>CurveForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MedianForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MedianForm.Designer.cs">
+      <DependentUpon>MedianForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GaussianForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GaussianForm.Designer.cs">
+      <DependentUpon>GaussianForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="HueSaturationForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="HueSaturationForm.Designer.cs">
+      <DependentUpon>HueSaturationForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="QuantizeForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="QuantizeForm.Designer.cs">
+      <DependentUpon>QuantizeForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TransformationForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TransformationForm.Designer.cs">
+      <DependentUpon>TransformationForm.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="BinarizationForm.resx">
+      <DependentUpon>BinarizationForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BrightnessForm.resx">
+      <DependentUpon>BrightnessForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ColorOverlayForm.resx">
+      <DependentUpon>ColorOverlayForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ConvolutionForm.resx">
+      <DependentUpon>ConvolutionForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CurveForm.resx">
+      <DependentUpon>CurveForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MedianForm.resx">
+      <DependentUpon>MedianForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GaussianForm.resx">
+      <DependentUpon>GaussianForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HueSaturationForm.resx">
+      <DependentUpon>HueSaturationForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="QuantizeForm.resx">
+      <DependentUpon>QuantizeForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TransformationForm.resx">
+      <DependentUpon>TransformationForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\PLL\PLL.csproj">
+      <Project>{17f09063-5f12-491d-95f4-3763efc2de82}</Project>
+      <Name>PLL</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Background.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icon-113-search-minus.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icon-94-folder.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icon-98-folder-upload.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icon-98-folder-uploadAs.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\transform-text_318-99850.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\022_path_shape_points_anchor_transform_free_tool_object_vector_circle_oval_edit-48.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\imageed.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\curv.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
